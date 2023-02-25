@@ -11,9 +11,9 @@ if($conn->connect_errno) {
     echo "Erro: " . $conn->connect_error;
 }
 
-$query = "CREATE TABLE teste (nome VARCHAR(100), sobrenome VARCHAR(100))";
+//$query = "CREATE TABLE teste (nome VARCHAR(100), sobrenome VARCHAR(100))";
 
-// $query = "DROP TABLE teste";
+$query = "DROP TABLE teste";
 
 $result = $conn->query($query); //Executando a query
 
